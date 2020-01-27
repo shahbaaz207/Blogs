@@ -1,0 +1,17 @@
+
+.about-me{
+  width: 20%;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-left: 500px;
+  margin-top: 60px;
+  background-color: grey;
+  transition: .8s;
+  text-align: center;
+  float: left;
+}
+.about-me:hover{
+  transform:scale(1.2);
+  transition: .5s;
+}

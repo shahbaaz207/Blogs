@@ -1,0 +1,69 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="/javascript2.js">
+        </script>
+
+    </head>
+    <body>
+        <div class="container">           
+            <h1 style="font-family:cursive;font-size:large  ;">Title:<u id="title"><%=title%></u></h1>
+            <p class='blg'><%=blog%></p>
+            <hr>
+        
+<br>
+<label for="author">Author*:</label>
+<p><%=author%></p>
+<br>
+<label id="des" for="description">Description*:</label>
+<p> Description:&nbsp;<%=description%></p>
+
+<hr>
+<style>
+    
+      #des{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+#title{
+    font-display: none;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: 100;
+    }
+</style>
+        </div>
+        <div class="container">
+            <form action="/comments" id="comment" method="post">
+                <label for="user_name">User name*:</label>
+                <input class="form-control form-control-sm" id="user_name" type="text" name="user" placeholder="user name">
+                <span id="user"></span>
+                <br>
+                <label for="e-mail">E-mail*:</label>
+                <input class="form-control form-control-sm" id="user_mail" type="email" name="email" placeholder="E-mail Address">
+                <span id="email"></span>
+                <br>
+                <i class="glyphicon glyphicon-user"></i>
+                <label for="comments">Comment here..</label>
+                
+                <div class="form-group">
+                    <input type="text" id="cmt" class="form-control" placeholder="Type your Comment here" name="comment">
+                    <span id="comments"></span>
+                </div>
+                <button type="submit" class="btn btn-info"><a href="/posts"></a>Post</button>
+            </form>
+        </div>
+       
+    </body>
+</html>
+
+
+
+
+
+    
